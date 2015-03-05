@@ -5,5 +5,5 @@ script:
 - mvn clean deploy --settings settings.xml
 env:
   global:
-  - secure: eaVpF/BVTMy+ktAt2kLv3Hbbsc5pJBPxJhOtgpjkwctABljL6tWc961vn/ExJ2ZVparJIWBQoIZz66L6iAGcdi01jcYz/Z+szgLeqz/cLAXg8D5SgrIIvjHN72TWbTmST5a4j5QkPIK2FLUB6GiX+lrtN5gBwOWSo8jtz+NUbzw=
-  - secure: XLB0K4dAmp9xPvBMVtXABkaXvtpbtl9Xb/oJruaqByh8xW7M+pbTbzk/dW6Y2tcF79DXYew28hPoY6sRIRoVt4fR40dkD+uUVuE/BkR5pQ41VF3HxcMv2S2ExfPBHu83D2EH7kvG/J4j3bCiR9RAoGGJRsbiI1Ln3lBS5fgiRYA=
+  - secure: BKzUtLBlkXZDrra8RtV9T32734ol7E+url1g7YfYa+RAUETxZjV8pFKPhG22Xcm2GAH9ehm9GnVwf59qfPPwun2lu28Wpoo9epMk59GzIahKv5wtagRMOv185GKOQrsIhRz490heV3/2E/XIVyKuofdy3YJkUpNRBvTmB65Q/hI=
+  - secure: YV/MTW0JV6W7oRM1oV8RSMhew7hEPxSCjxUbCkCXWkToBWJR4hkRCzyNKnH6V6ExcAEu7vMdt3FEPv4fAVqa0tCD9VpF1/RfjaN/QksZteC08D3gcWOC9mDJc0FFdnd9hhzedTInmoRzTHVzEad+aqqd4OrsN9lMoRhHq+OUoNM=
