@@ -32,8 +32,8 @@
     </organization>
 
     <scm>
-        <connection>scm:git:ssh://bq-devtools@git.dev.bqsoftware.net:29418/lib-rabbitmq</connection>
-        <developerConnection>scm:git:ssh://bq-devtools@git.dev.bqsoftware.net:29418/lib-rabbitmq</developerConnection>
+        <connection>scm:git:http://git.dev.bqsoftware.net/lib-rabbitmq</connection>
+        <developerConnection>scm:git:http://git.dev.bqsoftware.net/lib-rabbitmq</developerConnection>
         <url>https://github.com/bq/lib-rabbitmq</url>
         <tag>HEAD</tag>
     </scm>
