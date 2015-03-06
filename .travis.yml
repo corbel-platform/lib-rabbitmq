@@ -4,7 +4,7 @@ jdk:
 script:
 - mvn clean deploy --settings settings.xml
 after_success:
-- mvn clean cobertura:cobertura coveralls:report
+- mvn clean test jacoco:report coveralls:report
 env:
   global:
   - secure: BKzUtLBlkXZDrra8RtV9T32734ol7E+url1g7YfYa+RAUETxZjV8pFKPhG22Xcm2GAH9ehm9GnVwf59qfPPwun2lu28Wpoo9epMk59GzIahKv5wtagRMOv185GKOQrsIhRz490heV3/2E/XIVyKuofdy3YJkUpNRBvTmB65Q/hI=
