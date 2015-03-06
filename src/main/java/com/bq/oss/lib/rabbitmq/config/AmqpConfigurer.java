@@ -1,4 +1,4 @@
-package com.bq.lib.rabbitmq.config;
+package com.bq.oss.lib.rabbitmq.config;
 
 import java.util.Map;
 import java.util.Optional;

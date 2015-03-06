@@ -1,4 +1,4 @@
-package com.bq.lib.rabbitmq.config;
+package com.bq.oss.lib.rabbitmq.config;
 
 import static org.fest.assertions.api.Assertions.assertThat;
 import static org.mockito.Mockito.mock;

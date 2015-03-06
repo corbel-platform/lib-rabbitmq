@@ -1,4 +1,4 @@
-package com.bq.lib.rabbitmq.config;
+package com.bq.oss.lib.rabbitmq.config;
 
 public class BackoffOptions {
 

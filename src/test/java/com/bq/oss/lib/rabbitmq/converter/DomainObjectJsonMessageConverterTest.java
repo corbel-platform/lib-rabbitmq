@@ -1,4 +1,4 @@
-package com.bq.lib.rabbitmq.converter;
+package com.bq.oss.lib.rabbitmq.converter;
 
 import org.junit.Assert;
 import org.junit.Before;

@@ -1,4 +1,4 @@
-package com.bq.lib.rabbitmq.converter;
+package com.bq.oss.lib.rabbitmq.converter;
 
 import java.io.IOException;
 import java.lang.reflect.Type;
