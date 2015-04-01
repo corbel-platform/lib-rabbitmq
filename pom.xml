@@ -11,7 +11,7 @@
 
     <groupId>com.bq.oss.lib</groupId>
     <artifactId>rabbitmq</artifactId>
-    <version>0.5.0-SNAPSHOT</version>
+    <version>0.5.0</version>
 
     <name>lib-rabbitmq</name>
 
@@ -35,7 +35,7 @@
         <connection>scm:git:ssh://bq-devtools@git.dev.bqsoftware.net:29418/lib-rabbitmq</connection>
         <developerConnection>scm:git:ssh://bq-devtools@git.dev.bqsoftware.net:29418/lib-rabbitmq</developerConnection>
         <url>https://github.com/bq/lib-rabbitmq</url>
-        <tag>HEAD</tag>
+        <tag>rabbitmq-0.5.0</tag>
     </scm>
 
     <dependencies>
