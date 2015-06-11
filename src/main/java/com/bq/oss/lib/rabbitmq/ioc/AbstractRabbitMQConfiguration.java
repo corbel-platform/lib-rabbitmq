@@ -15,6 +15,8 @@ import org.springframework.core.env.Environment;
 
 import com.bq.oss.lib.rabbitmq.config.RabbitMQConfigurer;
 
+import java.util.Optional;
+
 @Configuration
 public abstract class AbstractRabbitMQConfiguration {
 
@@ -68,6 +70,10 @@ public abstract class AbstractRabbitMQConfiguration {
 
 	protected abstract Environment getEnvironment();
 
+	protected Optional<String> configPrefix() {
+		return Optional.empty();
+	}
+
 	/**
 	 * Override by subclasses to define the {@link MessageConverter} of the {@link AmqpTemplate}
 	 */
@@ -76,30 +82,34 @@ public abstract class AbstractRabbitMQConfiguration {
 	}
 
 	protected String getRabbitHost() {
-		return getEnvironment().getProperty("rabbitmq.host");
+		return getEnvironment().getProperty(configKey("rabbitmq.host"));
 	}
 
 	protected int getRabbitPort() {
-		return getEnvironment().getProperty("rabbitmq.port", int.class);
+		return getEnvironment().getProperty(configKey("rabbitmq.port"), int.class);
 	}
 
 	protected String getRabbitUsername() {
-		return getEnvironment().getProperty("rabbitmq.username", String.class);
+		return getEnvironment().getProperty(configKey("rabbitmq.username"), String.class);
 	}
 
 	protected String getRabbitPassword() {
-		return getEnvironment().getProperty("rabbitmq.password", String.class);
+		return getEnvironment().getProperty(configKey("rabbitmq.password"), String.class);
 	}
 
 	protected Integer getRequestedHeartbeat() {
-		return getEnvironment().getProperty("rabbitmq.requestedHeartbeat", Integer.class);
+		return getEnvironment().getProperty(configKey("rabbitmq.requestedHeartbeat"), Integer.class);
 	}
 
 	protected Integer getConnectionTimeout() {
-		return getEnvironment().getProperty("rabbitmq.connectionTimeout", Integer.class);
+		return getEnvironment().getProperty(configKey("rabbitmq.connectionTimeout"), Integer.class);
 	}
 
 	protected String getVirtualHost() {
-		return getEnvironment().getProperty("rabbitmq.virtualHost", String.class);
+		return getEnvironment().getProperty(configKey("rabbitmq.virtualHost"), String.class);
+	}
+
+	private String configKey(String keyName){
+		return configPrefix().map(prefix -> prefix+".").orElse("").concat(keyName);
 	}
 }
