@@ -86,7 +86,7 @@ public abstract class AbstractRabbitMQConfiguration {
 	}
 
 	protected int getRabbitPort() {
-		return getEnvironment().getProperty(configKey("rabbitmq.port"), int.class);
+		return getEnvironment().getProperty(configKey("rabbitmq.port"), Integer.class);
 	}
 
 	protected String getRabbitUsername() {
