@@ -1,4 +1,4 @@
-package com.bq.oss.lib.rabbitmq.converter;
+package io.corbel.lib.rabbitmq.converter;
 
 import java.lang.reflect.Type;
 

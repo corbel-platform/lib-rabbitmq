@@ -1,6 +1,6 @@
-package com.bq.oss.lib.rabbitmq.ioc;
+package io.corbel.lib.rabbitmq.ioc;
 
-import com.bq.oss.lib.rabbitmq.config.AmqpConfigurer;
+import io.corbel.lib.rabbitmq.config.AmqpConfigurer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.amqp.core.AmqpTemplate;
@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
 
-import com.bq.oss.lib.rabbitmq.config.RabbitMQConfigurer;
+import io.corbel.lib.rabbitmq.config.RabbitMQConfigurer;
 
 import java.util.Optional;
 

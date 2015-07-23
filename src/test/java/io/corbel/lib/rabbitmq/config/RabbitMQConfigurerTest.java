@@ -1,4 +1,4 @@
-package com.bq.oss.lib.rabbitmq.config;
+package io.corbel.lib.rabbitmq.config;
 
 import static org.fest.assertions.api.Assertions.assertThat;
 import static org.mockito.Mockito.mock;

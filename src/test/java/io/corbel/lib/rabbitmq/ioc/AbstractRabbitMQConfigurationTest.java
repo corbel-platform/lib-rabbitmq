@@ -1,4 +1,4 @@
-package com.bq.oss.lib.rabbitmq.ioc;
+package io.corbel.lib.rabbitmq.ioc;
 
 import org.junit.Assert;
 import org.junit.Test;

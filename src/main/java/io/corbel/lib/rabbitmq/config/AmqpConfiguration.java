@@ -1,4 +1,4 @@
-package com.bq.oss.lib.rabbitmq.config;
+package io.corbel.lib.rabbitmq.config;
 
 @FunctionalInterface
 public interface AmqpConfiguration {
