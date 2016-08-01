@@ -12,5 +12,5 @@ deploy:
     script: .travis/deploy.sh
     on:
       all_branches: true
-      repo: corbel-platform/lib-mongodb
+      repo: corbel-platform/lib-rabbitmq
       jdk: oraclejdk8
